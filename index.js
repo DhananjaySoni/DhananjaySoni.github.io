@@ -1,0 +1,90 @@
+
+$(document).ready(function () {
+
+
+  //Navbar scroll hide effect code below
+
+  var c, currentScrollTop = 0,
+    navbar = $('nav');
+
+  $(window).scroll(function () {
+    var a = $(window).scrollTop();
+    var b = navbar.height();
+
+    currentScrollTop = a;
+
+    if (c < currentScrollTop && a > b + b) {
+      navbar.addClass("scrollUp");
+    } else if (c > currentScrollTop && !(a <= b)) {
+      navbar.removeClass("scrollUp");
+    }
+    c = currentScrollTop;
+  });
+
+
+  // Navbar active nav-item code below
+  $('#navbar1 .navbar-nav a').on('click', function () {
+    $('#navbar1 .navbar-nav').find('li.active').removeClass('active');
+    $(this).parent('li').addClass('active');
+  });
+
+
+
+  // Loader code below
+  $(window).on("load", function () {
+    $(".loader-wrapper").fadeOut("slow");
+  });
+
+
+
+  //Navbar hide on focus out
+  $(function () {
+    $(document).on("click scroll", function (event) {
+      $('.navbar-collapse').collapse('hide');
+    });
+  });
+
+  //Adding and removing active class on nav-items
+  $(document).on('click', 'ul li', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
+
+  // Scroll to about section on click on span
+$(".scrolldown").click(function () {
+  $('html,body').animate({
+    scrollTop: $("#about").offset().top
+  },
+    30);
+
+});
+
+
+// go to top
+var btn = $('#button');
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function (e) {
+  e.preventDefault();
+  $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
+
+//add black background on navbar on scroll down
+$(window).scroll(function () {
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+
+
+});
+
+
+
+
