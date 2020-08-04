@@ -700,12 +700,13 @@ background-color: transparent;
   }
   #resume .timeline-ico {
     left: 2.4rem;
+    margin-left: 15vw;
   }
   #resume .timeline-header {
     float: none;
     width: auto;
     padding-right: 15px;
-    text-align: left;
+    text-align: center;
   }
   #resume .timeline-header h3 {
     font-size: 2rem;
@@ -727,11 +728,11 @@ background-color: transparent;
     bottom: auto;
     top: 0;
   }
-  #resume .timeline-header, #resume .timeline-content {
+  /* #resume .timeline-header, #resume .timeline-content {
     padding-left: 7rem;
-  }
+  } */
 }
-@media only screen and (max-width:470px) {
+@media only screen and (min-width:470px) and (max-width:768px){
 
   #resume .resume-header h2 {
     font-size: 2.2rem;
@@ -744,12 +745,12 @@ background-color: transparent;
     height: 3.6rem;
     width: 3.6rem;
     line-height: 3.6rem;
-    left: 1.8rem;
+    left: 3rem;
     margin-left: -4rem;
     font-size: 1.5rem;
   }
   #resume .timeline-header, #resume .timeline-content {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
   }
   #resume .timeline-content p{
     font-size: 1.2rem;
@@ -767,20 +768,48 @@ background-color: transparent;
     margin-left: -5rem;
     padding-left: -5rem;
   }
-}/*
-@media(min-width: 1030px){
-  #resume {
-padding:10rem;
-position: absolute;
-padding-right: 0;
 }
-#resume .timeline-content p{
-  font-size: 1.5rem;
 }
-#resume .resume-timeline {
-  max-width:80vw;
+
+@media only screen and (max-width:470px) {
+
+  #resume .resume-header h2 {
+    font-size: 2.2rem;
+    margin-left: 0;
+  }
+  #resume .timeline-wrap::before {
+    padding:0;
+  }
+  #resume .timeline-ico {
+    height: 3.6rem;
+    width: 3.6rem;
+    line-height: 3.6rem;
+    left: 3rem;
+    margin-left: -4rem;
+    font-size: 1.5rem;
+  }
+  #resume .timeline-header, #resume .timeline-content {
+    padding-left: 2.5rem;
+  }
+  #resume .timeline-content p{
+    font-size: 1.2rem;
+    padding:0;
+  }
+  #resume-work{
+    margin: 0;
+    padding: 0;
+  }
+  #resume .section-intro .col-12 h5{
+    margin-left: -5rem;
+    padding-left: -5rem;
+  }
+  #resume .section-intro .col-12 h1{
+    margin-left: -5rem;
+    padding-left: -5rem;
+  }
 }
-}*/
+
+
 
 /* Skills Section */
 #skills {
