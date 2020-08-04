@@ -699,8 +699,11 @@ background-color: transparent;
     left: 2.4rem;
   }
   #resume .timeline-ico {
-    left: 2.4rem;
-    margin-left: 15vw;
+    left: 3rem;
+    /* margin-left: 15vw; */
+  }
+  #resume .timeline-header{
+    padding-left: 3rem;
   }
   #resume .timeline-header {
     float: none;
@@ -710,6 +713,7 @@ background-color: transparent;
   }
   #resume .timeline-header h3 {
     font-size: 2rem;
+    padding-left: 2rem;
   }
   #resume .timeline-header p {
     font-size: 1.5rem;
@@ -731,8 +735,8 @@ background-color: transparent;
   /* #resume .timeline-header, #resume .timeline-content {
     padding-left: 7rem;
   } */
-}
-@media only screen and (min-width:470px) and (max-width:768px){
+/* }
+@media (min-width:470px) and (max-width:768px){
 
   #resume .resume-header h2 {
     font-size: 2.2rem;
@@ -769,7 +773,7 @@ background-color: transparent;
     padding-left: -5rem;
   }
 }
-}
+} */
 
 @media only screen and (max-width:470px) {
 
@@ -784,8 +788,8 @@ background-color: transparent;
     height: 3.6rem;
     width: 3.6rem;
     line-height: 3.6rem;
-    left: 3rem;
-    margin-left: -4rem;
+    /* left: 3rem; */
+    /* margin-left: -4rem; */
     font-size: 1.5rem;
   }
   #resume .timeline-header, #resume .timeline-content {
