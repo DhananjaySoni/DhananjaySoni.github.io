@@ -663,14 +663,12 @@ background-color: transparent;
 }
 .section-intro{
   text-align: center;
-  /* margin-left: 20vw; */
+  margin:auto;
+  padding-left:15vw;
   margin-bottom: 5vh;
 }
-/* .section-intro h5{
-  text-decoration: underline;
-  font-size: 3rem;
-  font-family: robotic;
-} */
+
+
 #resume .timeline-content p{
   font-family: "poppins-regular", sans-serif;
   font-size: 1.6rem;
