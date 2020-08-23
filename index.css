@@ -344,12 +344,13 @@ body {
 }
 
 .bttn:hover{
-  transform:scale(1.1);
+  transform:scale(1.2);
   opacity:1;
+  color:#03bda7;
   /* filter:blur(0); */
 }
 
-.bttn:before{
+/* .bttn:before{
   border-radius: 5px;
   content:'';
   position: absolute;
@@ -368,7 +369,7 @@ body {
   transition: transform 0.8s;
   transform-origin: left;
   transform:scaleX(1);
-}
+} */
 
 /* Darker background on mouse-over */
 /* .bttn:hover {

@@ -9,9 +9,9 @@ $(document).ready(function () {
   $('#site-landing').polygonizr({
     numberOfNodes: 30,
     nodeEase: 'linear',
-    nodeLineColor: "255,105,180",
+    nodeLineColor: "255,75,180",
   
-    nodeFillColor: "255,182,193"
+    nodeFillColor: "255,120,193"
 });
 $(window).resize(function () {
   let $sitelading = $('#site-landing');
