@@ -210,17 +210,24 @@ body {
 
  
 
-  
+ /* Particle BG*/
+ #site-landing {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  z-index: -10;
+}
 
-    /* Home Tab code below*/
+  /* Home Tab code below*/
 #home{
-    width:100%;
-    height:100vh;
-    padding: 20vh 0 220px;
-    background-image: url("img/body1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  width:100%;
+  height:100vh;
+  padding: 20vh 0 220px;
+  /* background-image: url("img/body1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
 }
 
 .intro-content h1 {
@@ -704,9 +711,7 @@ background-color: transparent;
   #resume .timeline-ico {
     left: 3rem;
   }
-  #resume .timeline-header{
-    
-  }
+  
   #resume .timeline-header {
     float: none;
     width: auto;
@@ -861,7 +866,16 @@ li.boots:after {
   to {
       width: 65%;
   }
-}li.ds:after {
+}
+li.angular:after {
+  animation-name: angular;
+}
+@keyframes angular {
+  to {
+      width: 65%;
+  }
+}
+li.ds:after {
   animation-name: ds;
 }
 @keyframes ds {
@@ -900,6 +914,14 @@ li.java:after {
 @keyframes java {
   to {
       width: 60%;
+  }
+}
+li.vue:after {
+  animation-name: vue;
+}
+@keyframes vue {
+  to {
+      width: 45%;
   }
 }
 
