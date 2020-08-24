@@ -20,10 +20,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #242f3f;
+    background-color: #1b1a1b;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index:1001;
   }
 
 .cm-spinner {
@@ -169,7 +170,7 @@ body {
 
 
   #navbar {
-    z-index:2000;
+    z-index:1000;
     position: fixed;
     width: 100%;
     display: block;
@@ -857,7 +858,7 @@ li.jq:after {
 }
 @keyframes jq {
   to {
-      width: 60%;
+      width: 70%;
   }
 }
 li.boots:after {
@@ -865,7 +866,7 @@ li.boots:after {
 }
 @keyframes boots {
   to {
-      width: 65%;
+      width: 70%;
   }
 }
 li.angular:after {
@@ -881,7 +882,7 @@ li.ds:after {
 }
 @keyframes ds {
   to {
-      width: 50%;
+      width: 60%;
   }
 }
 li.clang:after {
