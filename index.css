@@ -12,6 +12,10 @@ body {
     background: black;;
   }
 
+
+
+
+
   /*Loader code below*/
     
   .loader-wrapper{
@@ -569,6 +573,7 @@ h3.heading
     padding-right: 4vw;
     padding-left: 0;
    animation-delay: 2s;
+   text-align:center;
  }
 
 

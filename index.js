@@ -1,6 +1,10 @@
 
 $(document).ready(function () {
 
+// Loader code below
+setTimeout(function () {
+  $('.loader-wrapper').fadeOut();
+}, 500);
 
 
   // Particle BG using jquery plugin
@@ -53,10 +57,9 @@ $(window).resize(function () {
     $(this).parent('li').addClass('active');
   });
 
-  setTimeout(function () {
-    $('.loader-wrapper').fadeOut();
-}, 1000);
-  // Loader code below
+
+
+
   // $(window).on("load", function () {
   //   $(".loader-wrapper").fadeOut("slow");
   // });
